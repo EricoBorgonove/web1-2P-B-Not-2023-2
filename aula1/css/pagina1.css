@@ -1,0 +1,55 @@
+/*
+* --- > universal, será aplicada a toda a página e todas as tags
+. --- > classes, será aplicado para as tags que carregam aquela classe
+# --- > id, será aplicado somente a tag com o mesmo ID
+  --- > tags, será aplicado a todas a tags daquele tipo
+*/
+
+body{
+    background-color: beige;
+    
+}
+.pagina{
+    background-color: aqua;
+}
+#botao{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px 15px;
+}
+#botao:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.plinha {
+    font-size: 35px;
+}
+.span1{
+    background-color: aqua;
+    
+}
+.pagina1{
+    background-color: aqua;
+    margin: 15px 5px  10px 12px;
+}
+.legal{
+    background-color: blueviolet;
+    height: 150px;
+    width: 255px;
+    margin: 30px;
+    border-radius: 50% 0% 70% 0%;
+
+}
+.menu, li p { 
+    background-color: aqua; 
+}
+
+div{
+    background-color: brown;
+}

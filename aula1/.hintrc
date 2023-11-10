@@ -3,6 +3,9 @@
     "development"
   ],
   "hints": {
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "axe/forms": "off",
+    "button-type": "off",
+    "axe/name-role-value": "off"
   }
 }
