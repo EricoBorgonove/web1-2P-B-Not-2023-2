@@ -49,10 +49,10 @@
             </div>
             <div>
                 <label for="genero">Gênero: </label>
-                <input type="radio" name="genero" id=""> Masculino
-                <input type="radio" name="genero" id=""> Feminino
-                <input type="radio" name="genero" id=""> Outros
-                <input type="text" name="genero" id="" disabled>
+                <input type="radio" name="genero" id="" onclick="verOutros()"> Masculino
+                <input type="radio" name="genero" id="" onclick="verOutros()"> Feminino
+                <input type="radio" name="genero" id="" onclick="verOutros()"> Outros
+                <input type="text" name="genero" id="outros" disabled>
             </div>
             <div>
                 <label for="nascimento">Data de Nascimento:</label>
@@ -112,6 +112,22 @@
             <button type="submit">Salvar</button>
             <button type="reset">Limpar 1</button>
         </form>
+        <hr>
+        <section>
+            <h3>Endereço</h3>
+            <div>
+                <label for="">Cep: </label>
+                <input type="text" id="cep">
+                <button onclick="pesquisarCep()">Pesquisar</button>
+            </div>
+            <div>
+                <label for="rua">Logradouro: </label>
+                <input type="text" id="logradouro" disabled>
+
+            </div>
+
+            
+        </section>
  
 
             

@@ -164,3 +164,33 @@ function verCidade(){
         cidade.hidden = true
     }
 }
+
+function verOutros(){
+    const genero = document.getElementsByName('genero')
+    const outros = document.querySelector('#outros')
+
+    if (genero[2].checked){
+        outros.disabled = false
+    } else{
+        outros.disabled = true
+    }
+}
+
+function pesquisarCep(){
+    const cep = document.getElementById('cep').value
+
+    if (cep == ''){
+        alert('Campo Cep Vazio')
+    }else if (cep.length != 8){
+        alert ('cep Inválido')
+    }else {
+        viaCep(cep)
+    }
+}
+function viaCep (cep){
+    fetch(`https://viacep.com.br/ws/${cep}/json`)
+    .then(response => response.json())
+    .then(response =>{
+          document.getElementById('logradouro').value =   response.logradouro
+    })
+}
